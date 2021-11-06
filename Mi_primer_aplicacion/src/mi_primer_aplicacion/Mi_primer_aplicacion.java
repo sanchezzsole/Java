@@ -9,7 +9,6 @@ public class Mi_primer_aplicacion {
         //para mostrar en la consola los valores: soutTAB y pone:   System.out.println("");
         System.out.println("Hola de nuevo! tanto tiempo...");
             int numero;
-            String nombre;
             float promedio;
             boolean llueve=false;
             numero = 13;
@@ -26,7 +25,15 @@ public class Mi_primer_aplicacion {
             }else{
                 System.out.println("No usamos paraguas");
             }
-                
+             
+            
+            Juego jugador = new Juego(0, 3, "Mario", "Hongos", "martillo");
+            Juego jugador2 = new Juego(0, 3, "Luigi", "Hongos", "Fuego");
+            System.out.println("Mi nombre es "+ jugador.personaje);
+            System.out.println("Tengo " + jugador.getVidas() + " vidas");
+            System.out.println(jugador.mostrarSaludo());
+            System.out.println(jugador2.mostrarSaludo());
+       
         
     }
     
