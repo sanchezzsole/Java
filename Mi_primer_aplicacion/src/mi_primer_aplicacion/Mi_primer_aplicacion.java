@@ -1,5 +1,7 @@
 package mi_primer_aplicacion;
 
+import accesorios.Auto;
+
 public class Mi_primer_aplicacion {
     //para declarar las variables: primero si es public/private, luego el tipo de variable, y luego el nombreElegido
 
@@ -33,7 +35,11 @@ public class Mi_primer_aplicacion {
             System.out.println("Tengo " + jugador.getVidas() + " vidas");
             System.out.println(jugador.mostrarSaludo());
             System.out.println(jugador2.mostrarSaludo());
-       
+            
+            Auto miAuto = new Auto(60, true, 5, "Azul", "Suran", "ABC123", 2015);
+            miAuto.setEncendido(true);
+            System.out.println(miAuto.encender_auto());
+            
         
     }
     
