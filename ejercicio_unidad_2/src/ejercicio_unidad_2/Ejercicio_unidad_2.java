@@ -4,23 +4,18 @@ public class Ejercicio_unidad_2 {
 
     public static void main(String[] args) {
         
-        public String nombre;
-        public String apellido;
-        public int edad;
-        public String hobbie;
-        
         Scanner entrada = new Scanner(System.in);
-        
+        //siempre que quiero q el usuario ingrese datos debo declarar la clase SCANNER 
+        // de la siguiente manera, e importar java.util.Scanner;
+        //la clase Scanner necesita parametros, System.in
         System.out.println("Ingrese su nombre");
-        nombre=entrada.nextLine();
+        String nombre=entrada.nextLine();
         System.out.println("Ingrese su apellido");
-        apellido=entrada.nextLine();
+        String apellido=entrada.nextLine();
         System.out.println("Ingrese su edad");
-        edad=entrada.nextInt();
+        int edad=entrada.nextInt();
         System.out.println("Cuál es su hobbie?");
-        nombre=entrada.nextLine();
-        System.out.println("Ingrese su apellido");
-        apellido=entrada.nextLine();
+        String hobbie = entrada.nextLine();
         
         
         System.out.println("Su nombre nombre completo es: " + nombre + " " + apellido);
