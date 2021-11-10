@@ -16,15 +16,22 @@ public class Ejercicio_unidad_2 {
         int edad=entrada.nextInt();
         System.out.println("Cuál es su hobbie?");
         String hobbie = entrada.nextLine();
-        
-        
-        System.out.println("Su nombre nombre completo es: " + nombre + " " + apellido);
-        System.out.println("Usted tiene: " + edad + " años");
-        System.out.println("Su hobbie es: " + hobbie);
-          
-            
-        
-        
+        entrada.nextLine();
+        System.out.println("Ingrese su uuario");
+        String usuario=entrada.nextLine();
+        System.out.println("Ingrese su contraseña");
+        String pass=entrada.nextLine();
+        Ingreso ingresar = new Ingreso();
+        ingresar.setUsuario(usuario);
+        ingresar.setPass(pass);
+       if(ingresar.validar()){
+           System.out.println("Bienvenid@ " + ingresar.getUsuario());
+       } else {
+           System.out.println("Los datos son incorrectos, ingreselos nuevamente");
+       } 
+        //System.out.println("Su nombre nombre completo es: " + nombre + " " + apellido);
+        //System.out.println("Usted tiene: " + edad + " años");
+        //System.out.println("Su hobbie es: " + hobbie);  
     }
     
 }
