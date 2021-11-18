@@ -26,9 +26,18 @@ public class Conexion {
         ps = conexion.prepareStatement("SELECT * FROM registros");
         rs = ps.executeQuery();
         while(rs.next()){
+            //lo que captura es lo que está dentro de la columna con los "", NO el nombre de la variable
+            // por eso de nombre a la variable se le puede poner cualquiera
             int id = rs.getInt("id");
             int edad = rs.getInt("edad");
-            System.out.println("El id es: " + id + " y la edad " + edad); 
+            String nombre = rs.getString("nombre");
+            String apellido = rs.getString("apellido");
+            String provincia = rs.getString("provincia");
+                    
+            System.out.println(" El id es: " + id + "\n Nombre y apellido: " + nombre + " " + apellido + "\n La edad: " + edad + "\n Provincia: " + provincia); 
+            
+            // PARA MOSTRAR UN SOLO REGISTRO:
+            
         }
        
     }            
